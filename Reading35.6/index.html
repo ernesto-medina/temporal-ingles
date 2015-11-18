@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Verdadero o Falso</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/lib/jquery.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+<script src='/iframe/jquery.js' type='text/javascript'></script><script src='/iframe/button.js' type='text/javascript'></script></head>
+<body>
+	<div class="wrapper">
+		<table class="table">
+			<thead class="table-thead">
+				<tr>
+					<th></th>
+					<th>True</th>
+					<th>False</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr class="row">
+				<td><p>James was not well-behaved</p></td>
+                <td><div class="radio"><input type="radio" class="correcta" name="group1" id="q1" value="true"><label for="q1"></label></div></td>
+                <td><div class="radio"><input type="radio" class="error" name="group1" id="q2" value="false"><label for="q2"></label></div></td>
+			</tr>
+			<tr class="row">
+				<td><p>Justine moved out of the village after her relationship with James.</p></td>
+                <td><div class="radio"><input type="radio" class="error" name="group2" id="q4" value="false"><label for="q4"></label></div></td>
+                <td><div class="radio"><input type="radio" class="correcta" name="group2" id="q3" value="true"><label for="q3"></label></div></td>     
+			</tr>
+			<tr class="row">
+				<td><p>James was always boasting about his girlfriends.</p></td>
+				<td><div class="radio"><input type="radio" class="correcta" name="group3" id="q5" value="true"><label for="q5"></label></div></td>
+                <td><div class="radio"><input type="radio" class="error" name="group3" id="q6" value="false"><label for="q6"></label></div></td>
+                
+			</tr>
+            <tr class="row">
+				<td><p>James said that Justine dressed like a show girl</p></td>
+                <td><div class="radio"><input type="radio" class="correcta" name="group4" id="q8" value="true"><label for="q8"></label></div></td>
+                <td><div class="radio"><input type="radio" class="error" name="group4" id="q7" value="false"><label for="q7"></label></div></td>
+			</tr>
+			<tr class="row">
+				<td><p>James was ashamed that he ended the relationship with Justine</p></td>
+				<td><div class="radio"><input type="radio" class="error" name="group5" id="q9" value="false"><label for="q9"></label></div></td> 
+                <td><div class="radio"><input type="radio" class="correcta" name="group5" id="q10" value="true"><label for="q10"></label></div></td>
+                
+			</tr>
+			<tr class="row">
+				<td><p>Justine was not mistaken that James was a good man.</p></td>
+				<td><div class="radio"><input type="radio" class="error" name="group6" id="q12" value="false"><label for="q12"></label></div></td>
+                <td><div class="radio"><input type="radio" class="correcta" name="group6" id="q11" value="true"><label for="q11"></label></div></td>
+                
+			</tr>
+			<tr class="row">
+				<td><p>Justine rejoiced when James moved</p></td>
+				<td><div class="radio"><input type="radio" class="error" name="group7" id="q13" value="false"><label for="q13"></label></div></td>
+                <td><div class="radio"><input type="radio" class="correcta" name="group7" id="q14" value="true"><label for="q14"></label></div></td>
+                
+			</tr>
+			<tr class="row">
+				<td><p>Justine made a cot with James’ name on it</p></td>
+				<td><div class="radio"><input type="radio" class="error" name="group8" id="q15" value="false"><label for="q15"></label></div></td>
+                <td><div class="radio"><input type="radio" class="correcta" name="group8" id="q16" value="true"><label for="q16"></label></div></td>
+                
+			</tr>
+            
+			</tbody>
+			<tfoot class="table-tfoot">
+				<tr>
+					<td>
+						<div class="result">	
+							<input type="text" disabled value="Resultado">
+						</div>
+					</td>
+					<td colspan="2">
+						<div class="button">
+							<button class="submit">Verificar</button>
+							<button class="reset">Reiniciar</button>
+						</div>
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</div>
+</body>
+</html>

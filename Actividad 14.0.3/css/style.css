@@ -1,0 +1,160 @@
+@font-face {
+  	font-family: "Helvetica";
+      	src: url("../fonts/Helvetica.ttf") format('truetype');
+}
+html, body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	font-family: "Helvetica";
+	font-size: 16px;
+}
+.wrapper{
+	width: 100%;
+	margin: 10px auto;
+	display: block;
+	position: relative;
+}
+table.table{
+	width: 700px;
+	margin: 0 auto;
+	padding: 0;
+}
+.table thead{
+	text-align: center;
+}
+.table thead tr th{
+	background: #424142;
+	border-radius: 5px; 
+	font-size: 1.5em;
+	color: #FFF;
+	height: 40px;
+	width: 100px;
+}
+.table thead tr th:first-child, .table tbody tr td:first-child{
+	width: 500px;
+}
+.table tbody tr td:first-child{
+	border: 2px solid rgb(110, 168, 128);
+	background: none;
+}
+.table tbody tr td{
+	border: 2px solid rgb(110, 168, 128);
+	border-radius: 5px; 
+	padding: 5px;
+	color: #FFF;
+	height: 35px;
+	width: 100px;
+	font-weight: bold;
+}
+.table tbody tr td:nth-child(1){
+	color: rgb(110, 168, 128);
+	border: 2px solid rgb(110, 168, 128);
+}
+.table tbody tr td .radio{
+	width: 50px;
+	margin: 0 auto;
+	display: block;
+	height: 30px;
+	position: relative;
+}
+.table tbody tr td p{
+	width: 500px;
+	margin: 0;
+	word-break: break-word;
+}
+.table tbody tr td input[type="radio"]{
+	display: none;
+}
+.table tbody tr td label{
+	cursor: pointer;
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	left: 14px;
+	top: 2px;
+    background: #FFF;
+}
+.table tbody tr td label::after{
+	opacity: 0;
+	content: '';
+	position: absolute;
+	width: 17px;
+	height: 17px;
+	top: 4px;
+	left: 4px;
+	background: #67ba51;;
+	border-radius: 100%;
+}
+.table tbody tr td label::before{
+	content: '';
+	position: absolute;
+	width: 13px;
+	height: 13px;
+	top: 6px;
+	left: 6px;
+    background: -webkit-linear-gradient(#474747 0%, #000000 100%);
+    background: -moz-linear-gradient(#474747 0%, #000000 100%);
+    background: linear-gradient(#474747 0%, #000000 100%);
+	border-radius: 100%;
+}
+.table tbody tr td label:hover::after {
+	opacity: 0.5;
+}
+.table tbody tr td input[type=radio]:checked + label:after{
+	opacity: 1;
+}
+*:focus{
+	outline: none;
+}
+.table tfoot tr td input[type="text"]{
+	width: 500px;
+	border: 2px solid rgb(23,159,253);
+	border-radius: 5px;
+	height: 33px; 
+	color: #FFF;
+	font-weight: bold;
+	font-size: 18px;
+	padding-left: 5px;
+	background: rgb(23,159,253);
+}
+.table tfoot tr td .button, .result{
+	width: 100%;
+	position: relative;
+	display: block;
+	height: 40px;
+}
+.table tfoot tr td button{
+	position: absolute;
+	border: 2px solid rgb(136, 227, 165);
+	border-radius: 5px;
+	height: 40px;
+	width: 100%;
+	top: 0;
+	color: #424142;
+	font-weight: bold;
+	background: rgb(136, 227, 165);
+}
+.table tfoot tr td button.reset{
+	display: none;
+}
+.table tfoot tr td button:active{
+	top: 3px;
+	background: rgb(169, 223, 186);
+	border: 2px solid rgb(169, 223, 186);
+}
+.table tfoot tr td input[type="text"].success{
+	background: #67ba51;
+	color: #FFF;
+}
+.table tfoot tr td input[type="text"].error{
+	background: #E45F5F;
+	color: #FFF;
+}
+.table tfoot tr td input[type="text"].warning{
+	background: #E4DF5F;
+	color: #424142;
+}

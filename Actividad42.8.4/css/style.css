@@ -1,0 +1,246 @@
+@font-face {
+  	font-family: "Helvetica";
+      	src: url("../fonts/Helvetica.ttf") format('truetype');
+}
+html, body{
+	margin: 0;
+	padding: 0;
+}
+body{
+	width: 100%;
+	font-family: "Helvetica";
+	font-size: 16px;
+	font-weight: bold;
+}
+/*
+negro #424142
+azul rgb(23,159,253)
+rojo #E45F5F
+verde rgb(136, 227, 165)
+verde dark #607D62
+verde btn #5F9F73
+amarillo #E4DF5F
+verde light #67ba51
+*/
+.result-bg{
+	background: rgb(23,159,253);
+	color: rgb(255,255,255);
+}
+.success{
+	background: #67ba51;
+	color: rgb(255,255,255);
+}
+.error{
+	background: #E45F5F;
+	color: rgb(255,255,255);
+}
+.warning{
+	background: rgb(238, 204, 69);
+	color: #424142;
+}
+.border-black{
+	border: 2px solid #424142; 
+	border-radius: 0.5em;
+}
+.border-red{
+	border: 2px solid #E45F5F;
+}
+.border-green{
+	border: 2px solid #5F9F73;
+	border-radius: 0.5em;
+	background: #5F9F73;
+	color: #FFF!important;
+}
+.border-warning{
+	border-color: rgb(238, 204, 69);
+}
+.border-error{
+	border-color: #E45F5F;
+}
+.border-azul{
+	border-color: rgb(23,159,253);
+}
+.select{
+	color: rgb(23,159,253)!important; 
+}
+.active{
+	background: #5F9F73!important;
+	color: #FFF!important;
+}
+.show{
+	display: block;
+}
+.wrapper{
+	width: 100%;
+	margin: 0;
+	padding-top: 10px;
+	display: block;
+	position: relative;
+}
+.container{
+	width: 700px;
+	margin: 0 auto;
+	background: #FFF;
+	padding: 5px;
+	padding-top:0; 
+}
+.show{
+	display: block!important;
+}
+.question-wrap{
+	display: none;
+}
+.question-wrap.current{
+	display: block;
+}
+.question{
+	width: 100%;
+	padding: 0.5em 0 0 0;
+}
+.question .title{
+	color: #424142;
+	padding-left: 0.5em;
+	padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	border-bottom: 2px solid rgb(23,159,253);
+}
+.question .text{
+	margin: 0;
+	padding: 0;
+	margin-bottom: 0.1em;
+	padding-left: 0.5em;
+	color: #424142;
+	position: relative;
+}
+.question .text.circulo{
+	padding-left: 1.5em;
+}
+.question .text.circulo::before{
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	left: 7px;
+	border-radius: 100%;
+	top: 12px;
+	background: #424142;
+}
+.question .text .verb{
+	color: rgb(23,159,253);
+	padding: 0 0.5em 0 0.5em;
+}
+.option{
+	display: inline-block;
+	vertical-align: middle;
+	margin-bottom: 0.2em;
+}
+.option input{
+	font-size: 16px;
+	font-weight: bold;
+	height: 2em;
+	display: inline-block;
+	width: 12em;
+	background: #FFF;
+	text-align: center;
+	position: relative;
+	color: rgb(23,159,253);
+}
+.option .answer{
+	display: none;
+	height: 2em;
+	line-height: 2em;
+	padding: 0 0.5em;
+	margin-left: 0.5em;
+}
+.option .answer.showanswer{
+	display: inline-block;	
+}
+/*footer*/
+.panel-wrap{
+	padding-top: 5px;
+	background: transparent;
+}
+.panel{
+	width: 100%;
+	position: relative;
+	height: 2em;
+}
+.result{
+	border-radius: 0.5em;
+	border: 2px solid rgb(23,159,253);
+	padding: 0.5em;
+	font-weight: bold;
+	font-size: 16px;
+	width: 500px;
+}
+.btn-panel{
+	background: rgb(136, 227, 165);
+	border: none;
+	font-weight: bold;
+	font-size: 16px;
+	color: #424142;
+	padding: 0.5em;
+	width: 10em;
+	position: absolute;
+	height: 2.5em;
+	border-radius: 0.5em;
+	border: 2px solid rgb(136, 227, 165);
+}
+*:focus{
+	outline: none;
+}
+.btn-panel::before{
+	content: "";
+	position: absolute;
+	margin: 0 auto;
+	top: 10px;
+	left: 0;
+	right: 0;
+}
+.btn-panel.next, .btn-panel.restart{
+	right: 0;
+	top: 0;
+	display: none;
+}
+.btn-panel.next::before{
+	content: "Siguiente";
+}
+.btn-panel.restart::before{
+	content: "Reiniciar";
+}
+.btn-panel.submit{
+	right: 0;
+    top: 0;
+    width: 10em;
+}
+.btn-panel.submit::before{
+    content:"Comprobar";
+}
+.btn-panel.restart{
+	right: 0.5em;
+	top: 0;
+	width: 10em;
+	display: none;
+}
+.btn-panel:active{
+	top: 3px;
+	background: rgb(169, 223, 186);
+	border: 2px solid rgb(169, 223, 186);
+}
+.text.dialogo::before{
+	top: 3px!important;
+}
+.text.parrafo{
+	margin-top: 3em;
+}
+.border{
+	border-bottom: 1px solid rgb(23,159,253);
+	margin-bottom: 0.5em;
+	padding-bottom: 0.5em;
+}
+.large{
+		width: 	97%;
+}
+.large input{
+	width: 	100%;
+}
